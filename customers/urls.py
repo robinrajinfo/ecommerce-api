@@ -3,7 +3,7 @@ from .views import (
     CustomerRegistrationAPIView,
     CustomerLoginAPIView,
     CustomerProfileAPIView,
-    CustomerListView,  # ✅ Make sure this view exists
+    CustomerListView,  # Make sure this view exists
 )
 
 urlpatterns = [

@@ -29,7 +29,7 @@ class CustomerManager(BaseUserManager):
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)  # Required by Django admin if we add it later
 
-        # 👇 Default organisation for superuser, adjust pk if needed
+        # Default organisation for superuser, adjust pk if needed
         extra_fields.setdefault('organisation', Organisation.objects.get(pk=1))
 
         return self.create_user(mobile_number, password, **extra_fields)

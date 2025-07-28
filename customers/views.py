@@ -7,7 +7,7 @@ from .models import Customer
 from .serializers import (
     CustomerRegistrationSerializer,
     CustomerLoginSerializer,
-    CustomerDetailSerializer,  # ✅ make sure this is defined in your serializers
+    CustomerDetailSerializer,  # make sure this is defined in your serializers
 )
 
 
